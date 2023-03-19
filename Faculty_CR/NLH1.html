@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Schedule</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+  <h1>Edit Schedule</h1>
+  
+
+  <body>
+    <h1 style="text-align:center" >GS-3</h1>
+    <table  border="2px" style="width:100%" id="schedule">
+        <tr class="tr" >
+            <th>Serial No.</th>
+            <th>Day</th>
+            <th>8am-9am</th>
+            <th>9am-10am</th>
+            <th>10am-11am</th>
+            <th>11am-12am</th>
+            <th>2pm-3pm</th>
+            <th>3pm-4pm</th>
+            <th>4pm-5pm</th>
+            <th>5pm-6pm</th>
+        </tr>
+        
+        <tr class="tr">
+            <td>1.</td>
+            <td>MON.</td>
+            <td>HSS(C)</td>
+            <td>CY(D)</td>
+            <td>FREE</td>
+            <td>MA(A)</td>
+            <td>ECC(B)</td>
+            <td>DS(A)</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            
+        </tr> 
+        <tr class="tr">
+            <td>2.</td>
+            <td>TUE.</td>
+            <td>HSS(C)</td>
+            <td>CY(D)</td>
+            <td>FREE</td>
+            <td>MA(A)</td>
+            <td>ECC(B)</td>
+            <td>DS(A)</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            
+        </tr>    
+        <tr class="tr">
+            <td>3.</td>
+            <td>WED.</td>
+            <td>HSS(C)</td>
+            <td>CY(D)</td>
+            <td>FREE</td>
+            <td>MA(A)</td>
+            <td>ECC(B)</td>
+            <td>DS(A)</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            
+        </tr>    
+        <tr class="tr">
+            <td>4.</td>
+            <td>THU.</td>
+            <td>HSS(C)</td>
+            <td>CY(D)</td>
+            <td>FREE</td>
+            <td>MA(A)</td>
+            <td>ECC(B)</td>
+            <td>DS(A)</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            
+        </tr>    
+        <tr class="tr">
+            <td>5.</td>
+            <td>FRI.</td>
+            <td>HSS(C)</td>
+            <td>CY(D)</td>
+            <td>FREE</td>
+            <td>MA(A)</td>
+            <td>ECC(B)</td>
+            <td>DS(A)</td>
+            <td>FREE</td>
+            <td>FREE</td>
+            
+        </tr>    
+        
+
+        
+    </table>
+
+  <button id="edit-schedule">Edit Schedule</button>
+
+  <button id="save-schedule" style="display:none">Save Schedule</button>
+
+  <script>
+    // Get the table and the edit button
+    const scheduleTable = document.getElementById('schedule');
+    const editButton = document.getElementById('edit-schedule');
+    const saveButton = document.getElementById('save-schedule');
+
+    // Add an event listener to the edit button
+    editButton.addEventListener('click', () => {
+      // Make the table cells editable
+      const cells = scheduleTable.getElementsByTagName('td');
+      for (let i = 0; i < cells.length; i++) {
+        cells[i].contentEditable = true;
+      }
+
+      // Show the save button
+      saveButton.style.display = 'block';
+
+      // Hide the edit button
+      editButton.style.display = 'none';
+    });
+
+    // Add an event listener to the save button
+    saveButton.addEventListener('click', () => {
+      // Make the table cells non-editable
+      const cells = scheduleTable.getElementsByTagName('td');
+      for (let i = 0; i < cells.length; i++) {
+        cells[i].contentEditable = false;
+      }
+
+      // Hide the save button
+      saveButton.style.display = 'none';
+
+      // Show the edit button
+      editButton.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
