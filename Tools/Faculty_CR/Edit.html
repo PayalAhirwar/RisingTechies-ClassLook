@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassRooms</title>
+</head>
+
+<style>
+    body
+    {
+        background-color: rgba(212, 205, 195, 0.637);
+    }
+    {
+        font-weight: 550;
+    }
+
+    .row1,.row2/*i divided the entire layout into 2 rowws hence applying the flex property so that the smaller bosex follow the flex rule of the parent */
+    {
+        display: flex;
+    }
+
+   /* body
+    {
+        margin: 100px;/*margin around the boxes as a whole for clarity
+    }*/
+    .box
+    {
+        
+        flex-grow:1;/*to let the individual boxes adjust its size with one another*/
+        box-shadow:2px 2px 2px 2px  rgba(128, 128, 128, 0.493);    
+        margin: 30px;
+        width:300px;
+        min-height:100px;
+        border: 1px solid rgba(128, 128, 128, 0.493);
+        border-radius: 5px;
+        /* background-color: rgba(255, 255, 255, 0.733); */
+        background-color: rgb(199, 119, 221);
+       
+    }
+    
+    .text
+    {
+        
+        padding:30px;
+        text-align: center;
+    }
+            
+    input[type="button"]
+    {  /*styling the buttons*/
+        background-color:grey;
+        color:rgb(255, 255, 255);
+        text-align: center;
+        font-weight: bold;
+        border-radius: 20px;
+        border:solid grey;
+        width:90px;
+        height:50px;
+        margin-left:30%;
+        margin-right:30%;
+    }
+
+    h1{/*styling the main heading*/
+        font-size: 70px;
+        font-weight: 50;
+        margin-top: -5%;
+        font-family: cinzel;
+        text-align: center;
+    }
+    
+   
+</style>
+<body>
+    <h1>ClassRooms</h1>
+    <!--in this code i have divided the entire layout into 2 rows:row 1,row 2.  
+        taking a div for resp rows , i then took div for respective box with class name box
+        i let the image adjust to the actual box size and for the sub-heading,para,button i took another div with class:text-->
+    <div class="row1">
+        <div class="box">
+            <div class="text">
+            <h2>GS3</h2>
+            <form action="GS3.html">
+                <button type="submit">Click me</button>
+             </form>
+          </body>
+            </div>
+        </div>
+
+        <!--similarly i have followed this procedure f0or all other boxes-->
+        <div class="box"  style="margin-top:0%;"><!--in the example the middle boxes were a little higher up in the layout so i had to reinitialise the top margin value-->
+    
+            <div class="text">
+                <h2>GS4</h2>
+
+                <form action="GS4.html">
+                    <button type="submit">Click me</button>
+                 </form>
+                </div>
+        </div> 
+
+        
+
+        <div class="box" style="margin-top:4%">
+
+            <div class="text">
+                <h2>GS5</h2>
+                <!-- <p>Completely synergise resource taxing relationships via premier niche markets</p> -->
+                <form action="GS5.html">
+                    <button type="submit">Click me</button>
+                 </form>
+                </div>
+        </div>
+
+    </div>
+    <!--we know that div is a block level tag so it makes the next data entry continue from the next line hence here ends the div of row 1 and the div of row 2 starts -->
+    <div class="row2" style="margin-top: 5%;">
+        <div class="box">
+            <div class="text">
+            <h2>GS6</h2>
+            <form action="GS6.html">
+                <button type="submit">Click me</button>
+             </form>
+            </div>
+        </div>
+
+        <div class="box" style="margin-top:0%">
+            <div class="text">
+            <h2>NLH1</h2>
+            <form action="NLH1.html">
+                <button type="submit">Click me</button>
+             </form>
+            </div>
+        </div>
+
+        <div class="box" style="margin-top: 4%;">
+            <div class="text">
+            <h2>NLH2</h2>
+            <form action="NLH2.html">
+                <button type="submit">Click me</button>
+             </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassLook</title>
+    <style>
+        .box{
+            height: 500px;
+            width:500px;
+            background-color: rgb(138, 43, 226);
+            position: fixed; /* or absolute */
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            background-color: blueviolet;
+            text-align:center;
+            box-shadow: 2px 2px 0px 2px rgb(70, 61, 61);
+        }
+        .body{
+            background-color: gray;
+        }
+        .heading{
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        </style>
+<body>
+    <div class="box">
+    <div class="text">
+        <p class="heading" style="margin-top: 30%;">Faculty/CR</p>
+        <form action="Tools/Faculty_CR/Home.html">
+            <button type="submit">Click me</button>
+         </form>
+        </div>
+        <div>
+        <p class="heading">Student</p>
+        <form action="Tools/Student/Home.html">
+            <button type="submit">Click me</button>
+         </form>
+        </div>
+    </div>
+</body>
+</html>
